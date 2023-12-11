@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример сетки</title>
+    <link rel="normaliser" href="./assets/normalize.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+      }
+      .container > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><img src="./assets/forest.jpg" /></div>
+      <div><img src="./assets/azur.jpg" /></div>
+      <div><img src="./assets/stick.jpg" /></div>
+      <div><img src="./assets/book.jpg" /></div>
+      <div><img src="./assets/background.jpg" /></div>
+      <div><img src="./assets/drink.jpg" /></div>
+      <div><img src="./assets/kolpak.jpg" /></div>
+      <div><img src="./assets/pink.jpg" /></div>
+      <div><img src="./assets/mushrooms.jpg" /></div>
+      <div><img src="./assets/ball.jpg" /></div>
+    </div>
+  </body>
+</html>
